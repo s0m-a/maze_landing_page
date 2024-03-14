@@ -1,0 +1,217 @@
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    text-transform: capitalize;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    box-shadow: rgba(198, 198, 253, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.nav-header{
+    align-content: center;
+    width: 100%;
+}
+.nav-header h1{
+    font-size: 700;
+}
+span{
+    color: red;
+}
+
+.container{
+    margin: auto;
+    width: 90%;
+    height: 100%;
+}
+nav .link{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.link .contact
+{
+    display: none;
+}
+nav .link ul,nav .link a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+    margin-left: 20px;
+}
+.hero {
+    text-align: center;
+    height: 50%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('./image/maze.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.hero h1
+{
+text-transform: uppercase;
+color: white;
+padding-top: 15%;
+font-weight: 900;
+font-size: 5em;
+}
+.hero p
+{
+    text-transform: capitalize;
+    color: white;
+    font-size: 1.1em;
+}
+
+.explore-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color:white;
+    color:black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+  }
+
+  .explore-button:hover {
+    background-color: black;
+    color: white;
+  }
+  .about p{
+    margin-top: 20px;
+  }
+  section .sec {
+    display: flex;
+    align-items: center;
+    justify-content:space-between; 
+  }
+  .feature{
+    margin-top: 30px;
+    margin-bottom: 220px;
+  }
+  .feature h2{
+    text-align: center;
+    font-size: 4rem;
+  }
+.feature_con
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.feature img{
+    width: 50%;
+    height: 300px;
+}
+
+  footer {
+   bottom: 0;
+   left: 0;
+   height: auto;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color:white;
+    color: black;
+    padding: 30px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.footer-content
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer-content li, .footer-content a{
+    list-style: none;
+    color: black;
+    text-decoration: none;
+}
+/* contact page*/
+
+.contain {
+    position: relative;
+    bottom: -25%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contain h1 {
+    text-align: center;
+  }
+  
+  .contain p {
+    margin-bottom: 20px;
+  }
+  
+  .contain ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contain li {
+    margin-bottom: 10px;
+    
+  }
+  
+  .contain a {
+    text-decoration: none;
+    color: black
+  }
+  
+  .contain a:hover {
+    text-decoration: underline;
+  }
+  
+
+/* Make the footer content responsive */
+@media screen and (max-width: 1000px) {
+.container{
+    width: 100%;
+    }
+.hero {
+    height: 100%;
+}
+
+.hero h1
+{
+padding-top: 70%;
+}
+
+.link .contact
+{
+    display: block;
+}
+.feature h2{
+    text-align: center;
+    font-size: 2rem;
+  }
+.feature_con
+{
+flex-direction: column;
+}
+   footer{
+    display: none;
+   }
+    .footer-content p {
+        font-size: 14px; 
+    }
+}
